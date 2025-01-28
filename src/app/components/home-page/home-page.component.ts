@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './home-page.component.scss'
 })
 export class HomePageComponent {
-
+  public name = "Connor Langley";
+  public title = "Software Engineer";
 }
