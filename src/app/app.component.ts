@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, Router } from '@angular/router';
 import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
 
 @Component({
@@ -9,4 +9,6 @@ import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+
 }
+

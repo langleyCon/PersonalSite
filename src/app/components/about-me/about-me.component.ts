@@ -1,8 +1,9 @@
 import { Component, OnInit, signal} from '@angular/core';
+import { NavBarComponent } from '../nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-about-me',
-  imports: [],
+  imports: [NavBarComponent],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
 })
