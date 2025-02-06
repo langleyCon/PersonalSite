@@ -1,12 +1,22 @@
 import { Component, OnInit, signal} from '@angular/core';
 import { NavBarComponent } from '../nav-bar/nav-bar.component';
+import { animate, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-about-me',
   imports: [NavBarComponent],
   templateUrl: './about-me.component.html',
-  styleUrl: './about-me.component.scss'
+  styleUrl: './about-me.component.scss',
+  animations: [
+    trigger('fadeIn', [
+      transition(':enter', [
+        style({ opacity: 0, transform: 'translateY(-20px)' }),
+        animate('300ms ease-in-out', style({ opacity: 1, transform: 'translateY(0)' })),
+      ]),
+    ]),
+  ],
 })
+
 export class AboutMeComponent implements OnInit{
 
   private currentIndex = signal(0);
