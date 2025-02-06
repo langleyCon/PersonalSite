@@ -12,3 +12,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     font-size: 25px;
     margin: 0px;
 }
+
+.nav-buttons {
+    margin: 0px;
+    display: flex;
+    width: 750px;
+    justify-content: space-between;
+}
+
