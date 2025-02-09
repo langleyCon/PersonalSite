@@ -16,7 +16,7 @@ export class NavBarComponent {
   }
 
   public openGitHub(){
-    const url = "https://github.com/langleyCon/projects"
+    const url = "https://github.com/langleyCon/personalSite"
     window.open(url, '_blank')
   }
 

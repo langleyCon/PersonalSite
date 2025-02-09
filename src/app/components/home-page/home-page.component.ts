@@ -31,7 +31,7 @@ export class HomePageComponent {
   }
 
   public openGitHub() : void {
-    let url : string = "https://github.com/langleyCon/projects";
+    let url : string = "https://github.com/langleyCon/personalSite";
     window.open(url, "_blank"); 
   }
 }
