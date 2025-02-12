@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
-import {Router } from '@angular/router';
+import {Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,8 +8,15 @@ import {Router } from '@angular/router';
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.scss'
 })
-export class NavBarComponent {
-  constructor(private _router: Router){}
+export class NavBarComponent implements OnInit{
+  public currentRoute: string = "no route";
+  
+  constructor(private _router: Router, private _activeRoute: ActivatedRoute){}
+  
+  
+  ngOnInit(): void {
+     this.currentRoute = this._activeRoute.snapshot.url.map(segment => segment.path).join('/');  
+  }
 
   public routeTo(route : string){
     this._router.navigate([route]);

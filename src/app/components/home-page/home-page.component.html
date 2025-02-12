@@ -2,9 +2,6 @@
     <h1 class="name">{{name}}</h1>
     <h2 class="title">{{title}}</h2>
     <div class="nav-buttons">
-        <button mat-raised-button (click)="routeTo('about')">About Me</button>
-        <button mat-raised-button (click)="openGitHub()">GitHub</button>
-        <button mat-raised-button (click)="routeTo('/resume')">Resume</button>
-        <button mat-raised-button (click)="routeTo('/contact')">Contact Me</button>
+        <app-nav-bar></app-nav-bar>
     </div>
 </div>

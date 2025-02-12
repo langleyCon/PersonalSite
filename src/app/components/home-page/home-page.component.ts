@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import {MatButtonModule} from '@angular/material/button';
 import { animate, style, transition, trigger } from '@angular/animations';
+import { NavBarComponent } from "../nav-bar/nav-bar.component";
 
 @Component({
   selector: 'app-home-page',
-  imports: [MatButtonModule],
+  imports: [MatButtonModule, NavBarComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss',
   animations: [
