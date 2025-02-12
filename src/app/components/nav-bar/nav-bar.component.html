@@ -1,7 +1,19 @@
 <nav class="nav-buttons">
-    <button mat-raised-button (click)="routeTo('')">Home</button>
-    <button mat-raised-button (click)="routeTo('about')">About Me</button>
-    <button mat-raised-button (click)="openGitHub()">GitHub</button>
-    <button mat-raised-button (click)="routeTo('/resume')">Resume</button>
-    <button mat-raised-button (click)="routeTo('/contact')">Contact Me</button>
+    @if (currentRoute != ''){
+        <button mat-raised-button class="nav-button" (click)="routeTo('')">Home</button>
+    }
+
+    <button mat-raised-button class="nav-button" (click)="openGitHub()">GitHub</button>
+
+    @if (currentRoute != 'about'){
+        <button mat-raised-button class="nav-button" (click)="routeTo('about')">About Me</button>
+    }
+    
+    @if (currentRoute != 'resume'){
+        <button mat-raised-button class="nav-button" (click)="routeTo('/resume')">Resume</button>
+    }
+
+    @if (currentRoute != 'contact'){
+        <button mat-raised-button class="nav-button" (click)="routeTo('/contact')">Contact Me</button>
+    }
 </nav>
