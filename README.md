@@ -16,8 +16,8 @@ I'll periodically add some more projects to this secion as I complete them.
 
 ### Link to all my repos
 
-[Link Text][https://github.com/langleyCon?tab=repositories]
+[All Repos](https://github.com/langleyCon?tab=repositories)
 
 ### Link to old university projects written in C and Java
 
-[Link Text][https://github.com/langleyCon/projects]
+[Old University Projects](https://github.com/langleyCon/projects)
